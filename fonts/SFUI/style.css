@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'San Francisco(SF UI)';
+    src: local('San Francisco(SF UI) Display Bold'), local('San-Francisco(SF-UI)-Display-Bold'),
+        url('SFUIDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'San Francisco(SF UI)';
+    src: local('San Francisco(SF UI) Display Light'), local('San-Francisco(SF-UI)-Display-Light'),
+        url('SFUIDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('fonts/SFUI/style.css');
+
+.header {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+p {
+    font-family: 'SF UI Display';
+    font-size: 170%;
+    font-weight: 300;
+    text-align: center;
+}
+.crossedout {
+    text-decoration: line-through;
+}
+
+.grid-container {
+    display: grid;
+    align-self: center;
+    grid-template-columns: 33% 34% 33%;
+}
+
+.grid-item {
+    background-color: #9e9e9e;
+    border-radius: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2.5ch;
+    margin: 5px;
+}
+
+.hv {
+    transition-duration: 0.4s;
+}
+.grid-item:hover {
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.8);
+}
+
+a {
+    text-decoration: none;
+    color: #141414;
+}
+
+img {
+    width: 20%;
+    border-radius: 115px;
+}
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #292929;
+}
+hr {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(71, 71, 71);
+    border-radius: 14px;
+}
