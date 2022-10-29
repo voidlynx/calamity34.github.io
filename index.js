@@ -1,1 +1,1 @@
-function kc(cb){var i='';var k='38384040373937396665';document.addEventListener('keydown',function(e){input+=(""+e.keyCode);if(i===k){return cb();}if(!k.indexOf(i))return;i=("" + e.keyCode);});};kc(function(){document.body.style.backgroundImage="url('images/big.png')"})
+function kc(cb){var i='';var k='38384040373937396665';document.addEventListener('keydown',function(e){input+=(""+e.code);if(i===k){return cb();}if(!k.indexOf(i))return;i=("" + e.code);});};kc(function(){document.body.style.backgroundImage="url('images/big.png')";console.log("ee")})

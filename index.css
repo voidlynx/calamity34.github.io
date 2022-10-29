@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
 @import url('fonts/SFUI/style.css');
 
+:root {
+    --black: #0D1B2A;
+    --db: #1B263B;
+    --mb: #415A77;
+    --lb: #778DA9;
+    --white: #E0E1DD;
+}
+
 h1 {
     text-align: center;
     font-family: 'Fira Code','Montserrat', sans-serif;
@@ -24,7 +32,7 @@ p {
 }
 
 .grid-item {
-    background-color: #9e9e9e;
+    background-color: var(--lb);
     border-radius: 15px;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -39,7 +47,7 @@ p {
     transition-duration: 0.4s;
 }
 .grid-item:hover {
-    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 5px 20px 0px var(--mb);
 }
 .grid-item:active {
     transform: scale(1.1);
@@ -47,24 +55,25 @@ p {
 
 a {
     text-decoration: none;
-    color: #141414;
+    color: var(--black);
 }
 
 img {
     width: 20%;
-    border-radius: 115px;
+    border-radius: 10%;
 }
 .description {
     font-family: 'Fira Code','Montserrat', sans-serif;
     font-weight: 400;
-    color: #292929;
+    color: var(--db);
     padding-left: 8px;
     padding-right: 8px;
 }
 hr {
     width: 100%;
     height: 10px;
-    background-color: rgb(71, 71, 71);
+    color: var(--db);
+    background-color: var(--db);
     border-radius: 14px;
 }
 b {
@@ -72,4 +81,9 @@ b {
 }
 #media {
     font-size: 20px;
+}
+body {
+    background-color: var(--white);
+    padding-left: 20%;
+    padding-right: 20%;
 }
