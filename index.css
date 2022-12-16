@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap'); */
 @import url('nord.css');
+
+
+/* Font available at https://github.com/nerdypepper/scientifica */
+@font-face {
+    font-family: 'scientifica';
+    src: url('scientifica.ttf');
+}
 
 :root {
     --background: #d8dee9;
@@ -7,7 +14,7 @@
     --shadow: #4c566a;
     --text: #2e3440;
     --desc: #3b4252;
-    --hr: #5e81ac;
+    --hr: #434c5e;
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -22,11 +29,11 @@
 
 h1 {
     text-align: center;
-    font-family: 'Fira Code', sans-serif;
+    font-family: 'scientifica', sans-serif;
     font-weight: 600;
 }
 p {
-    font-family: 'Fira Code', sans-serif;
+    font-family: 'scientifica', sans-serif;
     font-size: 170%;
     font-weight: 400;
     text-align: center;
@@ -53,7 +60,7 @@ p {
     padding-top: 14px;
     padding-bottom: 14px;
     text-align: center;
-    font-family: 'Fira Code', sans-serif;
+    font-family: 'scientifica', sans-serif;
     font-weight: 600;
     font-size: 2.5ch;
     margin: 5px;
@@ -79,7 +86,7 @@ img {
     border-radius: 10%;
 }
 .description {
-    font-family: 'Fira Code', sans-serif;
+    font-family: 'scientifica', sans-serif;
     font-weight: 400;
     color: var(--desc);
     padding-left: 8px;
@@ -90,10 +97,10 @@ hr {
     height: 10px;
     color: var(--hr);
     background-color: var(--hr);
-    border-radius: 14px;
+    /* border-radius: 14px; */
 }
 b {
-    font-family: 'Fira Code', sans-serif;
+    font-family: 'scientifica', sans-serif;
 }
 #media {
     font-size: 20px;
@@ -109,4 +116,67 @@ body {
         padding-left: 10%;
         padding-right: 10%;
     }
+}
+
+/* Generated using https://pixelcorners.lukeb.co.uk/ */
+.px {
+    clip-path: polygon(
+      0px 20px,
+      4px 20px,
+      4px 12px,
+      8px 12px,
+      8px 8px,
+      12px 8px,
+      12px 4px,
+      16px 4px,
+      20px 4px,
+      20px 0px,
+      calc(100% - 20px) 0px,
+      calc(100% - 20px) 4px,
+      calc(100% - 12px) 4px,
+      calc(100% - 12px) 8px,
+      calc(100% - 8px) 8px,
+      calc(100% - 8px) 12px,
+      calc(100% - 4px) 12px,
+      calc(100% - 4px) 16px,
+      calc(100% - 4px) 20px,
+      100% 20px,
+      100% calc(100% - 20px),
+      calc(100% - 4px) calc(100% - 20px),
+      calc(100% - 4px) calc(100% - 12px),
+      calc(100% - 8px) calc(100% - 12px),
+      calc(100% - 8px) calc(100% - 8px),
+      calc(100% - 12px) calc(100% - 8px),
+      calc(100% - 12px) calc(100% - 4px),
+      calc(100% - 16px) calc(100% - 4px),
+      calc(100% - 20px) calc(100% - 4px),
+      calc(100% - 20px) 100%,
+      20px 100%,
+      20px calc(100% - 4px),
+      12px calc(100% - 4px),
+      12px calc(100% - 8px),
+      8px calc(100% - 8px),
+      8px calc(100% - 12px),
+      4px calc(100% - 12px),
+      4px calc(100% - 16px),
+      4px calc(100% - 20px),
+      0px calc(100% - 20px)
+    );
+}
+
+.pxhr {
+    clip-path: polygon(
+      0px 4px,
+      4px 4px,
+      4px 0px,
+      calc(100% - 4px) 0px,
+      calc(100% - 4px) 4px,
+      100% 4px,
+      100% calc(100% - 4px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 4px) 100%,
+      4px 100%,
+      4px calc(100% - 4px),
+      0px calc(100% - 4px)
+    );
 }
