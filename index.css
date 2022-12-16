@@ -1,6 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
 @import url('nord.css');
 
+:root {
+    --background: #d8dee9;
+    --gridbg: #81a1c1;
+    --shadow: #4c566a;
+    --text: #2e3440;
+    --desc: #3b4252;
+    --hr: #5e81ac;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #2e3440;
+        --gridbg: #5e81ac;
+        --shadow: #4c566a;
+        --text: #e5e9f0;
+        --desc: #d8dee9;
+        --hr: #81a1c1;
+    }
+}
+
 h1 {
     text-align: center;
     font-family: 'Fira Code', sans-serif;
@@ -22,8 +41,14 @@ p {
     grid-template-columns: 33% 34% 33%;
 }
 
+@media only screen and (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 100%;
+    }
+}
+
 .grid-item {
-    background-color: var(--nord9);
+    background-color: var(--gridbg);
     border-radius: 15px;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -38,7 +63,7 @@ p {
     transition-duration: 0.4s;
 }
 .grid-item:hover {
-    box-shadow: 5px 5px 20px 0px var(--nord3);
+    box-shadow: 5px 5px 20px 0px var(--shadow);
 }
 .grid-item:active {
     transform: scale(1.1);
@@ -46,7 +71,7 @@ p {
 
 a {
     text-decoration: none;
-    color: var(--nord0);
+    color: var(--text);
 }
 
 img {
@@ -56,15 +81,15 @@ img {
 .description {
     font-family: 'Fira Code', sans-serif;
     font-weight: 400;
-    color: var(--nord1);
+    color: var(--desc);
     padding-left: 8px;
     padding-right: 8px;
 }
 hr {
     width: 100%;
     height: 10px;
-    color: var(--nord3);
-    background-color: var(--nord3);
+    color: var(--hr);
+    background-color: var(--hr);
     border-radius: 14px;
 }
 b {
@@ -74,8 +99,14 @@ b {
     font-size: 20px;
 }
 body {
-    color: var(--nord0);
-    background-color: var(--nord4);
+    color: var(--text);
+    background-color: var(--background);
     padding-left: 20%;
     padding-right: 20%;
+}
+@media only screen and (max-width: 800px) {
+    body {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
