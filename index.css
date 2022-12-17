@@ -11,50 +11,54 @@
 :root {
     --background: #d8dee9;
     --gridbg: #81a1c1;
-    --shadow: #4c566a;
     --text: #2e3440;
     --desc: #3b4252;
     --hr: #434c5e;
+    --medialink: #5e81ac;
+    --mlhover: #81a1c1;
 }
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #2e3440;
         --gridbg: #5e81ac;
-        --shadow: #4c566a;
         --text: #e5e9f0;
         --desc: #d8dee9;
         --hr: #81a1c1;
+        --medialink: #8fbcbb;
+        --mlhover: #88c0d0;
     }
 }
 
-h1 {
+h1 { /* header at the top */
     text-align: center;
     font-family: 'scientifica', sans-serif;
     font-weight: 600;
 }
-p {
+
+p { /* text below header */
     font-family: 'scientifica', sans-serif;
     font-size: 170%;
     font-weight: 400;
     text-align: center;
 }
-.crossedout {
-    text-decoration: line-through;
-}
 
-.grid-container {
+.grid-container { /* container for link boxes */
     display: grid;
     align-self: center;
     grid-template-columns: 33% 34% 33%;
 }
 
+/* 
+    if screen width <= 800px - shrink link boxes to a single column.
+    mobile optimization.
+*/
 @media only screen and (max-width: 800px) {
     .grid-container {
         grid-template-columns: 100%;
     }
 }
 
-.grid-item {
+.grid-item { /* link box */
     background-color: var(--gridbg);
     border-radius: 15px;
     padding-top: 14px;
@@ -66,51 +70,64 @@ p {
     margin: 5px;
 }
 
+/* click transitions */
 .hv {
     transition-duration: 0.4s;
 }
+/*
 .grid-item:hover {
-    box-shadow: 5px 5px 20px 0px var(--shadow);
+    box-shadow: 50px 50px 20px 0px var(--shadow);
 }
+*/
 .grid-item:active {
     transform: scale(1.1);
 }
 
-a {
+a { /* various links */
     text-decoration: none;
     color: var(--text);
 }
 
-img {
+/* coloring for links at the bottom */
+.mlink {
+    color: var(--medialink)
+}
+.mlink:hover {
+    color: var(--mlhover)
+}
+
+img { /* link icons */
     width: 20%;
     border-radius: 10%;
 }
-.description {
+
+.description { /* descriptions for link boxes*/
     font-family: 'scientifica', sans-serif;
     font-weight: 400;
     color: var(--desc);
     padding-left: 8px;
     padding-right: 8px;
 }
-hr {
+
+hr { /* horizontal lines */
     width: 100%;
     height: 10px;
     color: var(--hr);
     background-color: var(--hr);
-    /* border-radius: 14px; */
 }
-b {
-    font-family: 'scientifica', sans-serif;
-}
-#media {
+
+#media { /* links at the bottom */
     font-size: 20px;
 }
-body {
+
+body { /* the body itself */
     color: var(--text);
     background-color: var(--background);
     padding-left: 20%;
     padding-right: 20%;
 }
+
+/* shrink padding if small screen */
 @media only screen and (max-width: 800px) {
     body {
         padding-left: 10%;
@@ -118,6 +135,7 @@ body {
     }
 }
 
+/* pixel cutouts on edges to match the font */
 /* Generated using https://pixelcorners.lukeb.co.uk/ */
 .px {
     clip-path: polygon(
