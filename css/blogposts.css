@@ -1,0 +1,47 @@
+@import "/css/fonts.css";
+@import "/css/colors.css";
+
+body {
+    font-family: 'Moscow Sans';
+    font-size: 16px;
+    background-color: var(--nord0);
+    line-height: 1.6;
+    margin: 40px auto;
+    padding: 0 10px;
+    max-width: 650px;
+}
+
+h1, h2 {
+    color: var(--nord8);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+p {
+    color: var(--nord4);
+}
+
+li {
+    color: var(--nord5)
+}
+
+a {
+    color: var(--nord7);
+}
+
+/* i love you, display: flex */
+pre {
+    background-color: var(--nord1);
+    color: var(--nord9);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    overflow: auto;
+    max-width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center;
+}

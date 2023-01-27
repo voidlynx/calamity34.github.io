@@ -1,12 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap'); */
-@import url('nord.css');
-
-
-/* Font available at https://github.com/nerdypepper/scientifica */
-@font-face {
-    font-family: 'scientifica';
-    src: url('scientifica.ttf');
-}
+@import 'fonts.css';
 
 :root {
     --background: #d8dee9;
@@ -32,7 +25,7 @@
 h1 { /* header at the top */
     text-align: center;
     font-family: 'scientifica', sans-serif;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 p { /* text below header */

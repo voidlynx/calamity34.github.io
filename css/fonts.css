@@ -1,0 +1,20 @@
+/* Font available at https://github.com/nerdypepper/scientifica */
+@font-face {
+    font-family: 'scientifica';
+    src: url('/fonts/scientifica.ttf');
+    font-display: swap;
+}
+
+/* The Moscow Sans font was designed for commercial use for the City of Moscow's DOT. 
+   As this is not a commercial website, the usage of this font should be alright.  */
+@font-face {
+    font-family: "Moscow Sans";
+    src: url('/fonts/MoscowSansRegular.ttf');
+    font-display: swap;
+}
+@font-face {
+    font-family: "Moscow Sans";
+    src: url('/fonts/MoscowSansBold.ttf');
+    font-weight: bold;
+    font-display: swap;
+}
