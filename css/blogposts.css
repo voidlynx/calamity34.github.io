@@ -16,6 +16,9 @@ h1, h2 {
     font-weight: bold;
     line-height: 1.2;
 }
+h5 {
+    color: var(--nord6);
+}
 
 p {
     color: var(--nord4);

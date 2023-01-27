@@ -1,0 +1,7 @@
+@import "/css/fonts.css";
+@import "/css/colors.css";
+
+body {
+    background-color: var(--nord0);
+    color: var(--nord6);
+}
